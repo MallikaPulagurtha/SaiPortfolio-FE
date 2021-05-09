@@ -26,8 +26,8 @@ function Welcome() {
                 <hr />
                 <div className="sub">Ay! I'm on vacation, every single day, cause I love my occupation</div>
                 <div className="row calltoaction">
-                    <div className="col col-lg-6 center"><a href="https://drive.google.com/file/d/1cjBmeefeDuyjMgsoH5DBh8PPeH7v1E7D/view?usp=sharing" target="_blank"><button className="btn btn-light text-white bg-transparent mainbuttons m-1">View Resume</button></a></div>
-                    <div className="col col-lg-6 center"><a href="#projects"><button className="btn btn-light text-dark mainbuttons m-1">Go to Projects</button></a></div>
+                    <div className="col col-lg-6 center"><a href="https://drive.google.com/file/d/1cjBmeefeDuyjMgsoH5DBh8PPeH7v1E7D/view?usp=sharing" target="_blank"><button className="btn btn-light text-white bg-transparent mainbuttons m-2">View Resume</button></a></div>
+                    <div className="col col-lg-6 center"><a href="#projects"><button className="btn btn-light text-dark mainbuttons m-2">Go to Projects</button></a></div>
                 </div>
                 <a href="#about" class="btn-get-started scrollto"><i class="fas fa-angle-down fa-2x"></i></a>
             </section>
