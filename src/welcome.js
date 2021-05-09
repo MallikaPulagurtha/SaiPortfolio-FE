@@ -158,9 +158,9 @@ function Welcome() {
                 {/* <!-- End Skills Section --> */}
 
                 {/* <!-- ======= Resume Section ======= --> */}
-               ?
 
-                        {/* <div><img className="resume" src={process.env.PUBLIC_URL + "./Resume.png"} /></div> */}
+
+                {/* <div><img className="resume" src={process.env.PUBLIC_URL + "./Resume.png"} /></div> */}
 
                 {/* <div class="row">
                             <div class="col-lg-6">
