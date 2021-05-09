@@ -8,26 +8,26 @@ function Welcome() {
     return (
         <>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                {/* <Link class="navbar-brand company" to="/"><h1>Portfolio</h1></Link> */}
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="nav-item nav-link navbar-brand link" href="/"><img className="mylogo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNTAwcHgiIGhlaWdodD0iNDYycHgiIHZpZXdCb3g9IjAgMCA1MDAgNDYyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA1OSAoODYxMjcpIC0gaHR0cHM6Ly9za2V0Y2guY29tIC0tPgogICAgPHRpdGxlPlNoYXBlPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGcgaWQ9IkJyYW5kLXYyIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNNDMwLjQyNjAxNSwxNDQuNzcwMTE1IEM0MDQuOTY1OTY5LDE0NC43NzAxMTUgMzgxLjUyMjU2MSwxNTguNjc4MTYxIDM2OS4yOTY2OTgsMTgxLjE4MzkwOCBMMzMyLjExNDk0OCwyNDkuNTg2MjA3IEwzMDAuODU3MDcxLDE5MS41NTE3MjQgQzI4NS4yMjgxMzIsMTYwLjcwMTE0OSAyNDEuMzY2MjcyLDE1Ni42NTUxNzIgMjI1LjQ4NTI1MywxODcuMzc5MzEgTDE5Mi43MTQ4OTgsMjUwLjcyNDEzOCBMMTQzLjMwNzI4NSwxNTguOTMxMDM0IEw4NC4wNjg1NjU3LDE1OC41NTE3MjQgTDE1NC45MDI5NDksMjkzLjMzMzMzMyBDMTY5LjkwMTY4OSwzMjEuOTA4MDQ2IDIxMC4zNjA0NzQsMzIyLjQxMzc5MyAyMjYuMjQxNDkyLDI5NC4zNDQ4MjggTDI2MS41MzI2NDQsMjMxLjYzMjE4NCBMMjk1LjgxNTQ3OCwyOTQuMjE4MzkxIEMzMTEuMTkyMzM3LDMyMi4yODczNTYgMzUxLjUyNTA4MiwzMjIuNDEzNzkzIDM2Ni45MDE5NDEsMjk0LjM0NDgyOCBMNDE0LjkyMzExNiwyMDcuMzU2MzIyIEM0MjMuNjE5ODY0LDE5MS41NTE3MjQgNDQ3LjQ0MTM5MSwxOTcuNzQ3MTI2IDQ0Ny40NDEzOTEsMjE1LjcwMTE0OSBMNDQ3LjU2NzQzMSwzMzEuMzkwODA1IEM0NDcuNTY3NDMxLDM3NC4zNzkzMSA0MTIuNjU0Mzk5LDQwOS40MDIyOTkgMzY5LjgwMDg1Nyw0MDkuNDAyMjk5IEwxMzAuNDUxMjIzLDQwOS40MDIyOTkgQzg3LjU5NzY4MDksNDA5LjQwMjI5OSA1Mi42ODQ2NDgzLDM3NC4zNzkzMSA1Mi42ODQ2NDgzLDMzMS4zOTA4MDUgTDUyLjY4NDY0ODMsMTMwLjg2MjA2OSBDNTIuNjg0NjQ4Myw4Ny44NzM1NjMyIDg3LjU5NzY4MDksNTIuODUwNTc0NyAxMzAuNDUxMjIzLDUyLjg1MDU3NDcgTDQ1MS42MDA3MDYsNTIuODUwNTc0NyBMNDUxLjYwMDcwNiwwIEwxMzAuNDUxMjIzLDAgQzU4LjQ4MjQ4MDUsMCAwLDU4LjY2NjY2NjcgMCwxMzAuODYyMDY5IEwwLDMzMS4xMzc5MzEgQzAsNDAzLjQ1OTc3IDU4LjM1NjQ0MDYsNDYyIDEzMC40NTEyMjMsNDYyIEwzNjkuNTQ4Nzc3LDQ2MiBDNDQxLjY0MzU1OSw0NjIgNTAwLDQwMy40NTk3NyA1MDAsMzMxLjEzNzkzMSBMNTAwLDIyMy4xNjA5MiBMNTAwLDIxNC41NjMyMTggQzUwMCwxNzYgNDY4Ljg2ODE2MiwxNDQuNzcwMTE1IDQzMC40MjYwMTUsMTQ0Ljc3MDExNSBaIiBpZD0iU2hhcGUiIGZpbGw9IiM3NTEwRjciIGZpbGwtcnVsZT0ibm9uemVybyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjUwLjAwMDAwMCwgMjMxLjAwMDAwMCkgc2NhbGUoMSwgLTEpIHRyYW5zbGF0ZSgtMjUwLjAwMDAwMCwgLTIzMS4wMDAwMDApICI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=" /></a>
                 <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active navbar-brand link" href="/">Home</a>
+                    <div class="navbar-nav navbar-nav ml-auto" >
                         <a class="nav-item nav-link navbar-brand link" href="#about">About</a>
-                        <a class="nav-item nav-link navbar-brand link" href="#portfolio">Projects</a>
-                        <a class="nav-item nav-link navbar-brand link" href="#resume">Resume</a>
-                        <a class="nav-item nav-link navbar-brand link" href="#contact">Contact</a>
+                        <a class="nav-item nav-link navbar-brand link myprojects" href="#projects">Projects</a>
+                        {/* <a class="nav-item nav-link navbar-brand link" href="#resume">Resume</a> */}
+                        {/* <a class="nav-item nav-link navbar-brand link" href="#contact">Contact</a> */}
                     </div>
                 </div>
             </nav>
+
             {/* <!-- ======= Hero Section ======= --> */}
             <section id="hero" class="d-flex flex-column align-items-center justify-content-center Title">
-                <div className="main">Hi, I'm Sai Mallika!</div>
+                <div className="main">Mallika Pulagurtha</div>
                 <hr />
-                <div className="sub">A Full Stack Developer</div>
+                <div className="sub">Ay! I'm on vacation, every single day, cause I love my occupation</div>
                 <div className="row calltoaction">
-                    <div className="col col-lg-6"><button className="btn btn-light text-white bg-transparent mainbuttons m-3">View Resume</button></div>
-                    <div className="col col-lg-6"><button className="btn btn-light text-dark mainbuttons m-3">Go to Portfolio</button></div>
+                    <div className="col col-lg-6 center"><a href="https://drive.google.com/file/d/1cjBmeefeDuyjMgsoH5DBh8PPeH7v1E7D/view?usp=sharing" target="_blank"><button className="btn btn-light text-white bg-transparent mainbuttons m-1">View Resume</button></a></div>
+                    <div className="col col-lg-6 center"><a href="#projects"><button className="btn btn-light text-dark mainbuttons m-1">Go to Projects</button></a></div>
                 </div>
                 <a href="#about" class="btn-get-started scrollto"><i class="fas fa-angle-down"></i></a>
             </section>
@@ -38,54 +38,60 @@ function Welcome() {
                 {/* <!-- ======= About Section ======= --> */}
                 <section id="about" class="about">
                     <div class="container">
-
                         <div class="row">
-                            <div className="col col-lg-4"><img className="mypicture center" src={process.env.PUBLIC_URL + "./Illustration.jpg"} /></div>
+                            <div className="col col-lg-4 center"><img className="mypicture center center2" src={process.env.PUBLIC_URL + "./Illustration.jpg"} /></div>
                             <div className="col col-lg-8">
                                 <div class="d-flex align-items-stretch">
                                     <div class="content d-flex flex-column justify-content-center">
-                                        <h1>Me.</h1>
-                                        <p class="myintro">I describe myself definitely as the creative one, looking for an opportunity to learn, improve and deliver best results for the organization, by being a quick learner, committed, innovative and flexible.</p>
-                                        <span class="myintro">"I can't imagine anything worthwhile than doing what I love the most!"</span>
+                                        <h2>Me.</h2>
+                                        <span class="myintro developer">Full Stack Web Developer</span>
+                                        <p class="myintro">The creative little one, who loves coding and designing anything and everything beautifully, minimalistic, promissing effortless handling, yet unique at the same time.</p><br />
+                                        {/* <p class="myintro"><i>"I can't imagine anything worthwhile than doing what I love the most!"</i></p> */}
+                                        <div className="myskills">
+                                            <img className="myskillset" src={process.env.PUBLIC_URL + "./writing.png"} />
+                                            <img className="myskillset" src={process.env.PUBLIC_URL + "./painting.png"} />
+                                            <img className="myskillset" src={process.env.PUBLIC_URL + "./designing.png"} />
+                                            <img className="myskillset" src={process.env.PUBLIC_URL + "./creative.png"} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="row">
-                            <div class="row">
-                                <div className="col-lg-3">
-                                    <div className="card">
-                                        <div className="card-header">Creative</div>
+                        {/* <div className="row">
+                            <div class="row interestsec">
+                                <div className="col-lg-3 interests center">
+                                    <div className="card bg-light bg-transparent">
+                                        <div className="card-header bg-transparent center">Creative</div>
                                         <div className="card-body">
-                                            <p>I love being creative, hence the result, all my of designs are unique and creative.</p>
+                                            <p>I love being creative and hence is the result, that all my of designs are unique and creative.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-3">
-                                    <div className="card">
-                                        <div className="card-header">Sketching</div>
+                                <div className="col-lg-3 interests center">
+                                    <div className="card bg-light bg-transparent">
+                                        <div className="card-header bg-transparent center">Sketching</div>
                                         <div className="card-body">
-                                            <p>I Sketch and illustrate.<br></br>Has a page on instagram, @malli._.arts, check it out!</p>
+                                            <p>I Sketch and illustrate, draw Mandala, Silhouettes and many more, check out @malli._.arts on ig!</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-3">
-                                    <div className="card">
-                                        <div className="card-header">Writing</div>
+                                <div className="col-lg-3 interests center">
+                                    <div className="card bg-light bg-transparent">
+                                        <div className="card-header bg-transparent center">Writing</div>
                                         <div className="card-body">
                                             <p>I love writing my thoughts down, also have many a followers for my writing on facebook.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-lg-3">
-                                    <div className="card">
-                                        <div className="card-header">Creative</div>
+                                <div className="col-lg-3 interests center">
+                                    <div className="card bg-light bg-transparent">
+                                        <div className="card-header bg-transparent center">Designing</div>
                                         <div className="card-body">
-                                            <p>I love being creative, hence the result, all my of designs are unique and creative.</p>
+                                            <p>I love designing interfaces and logos and always try out different mediums in design.</p>
                                         </div>
                                     </div>
-                                </div>
-                                {/* <div class="col-md-3 d-md-flex align-items-md-stretch">
+                                </div> */}
+                        {/* <div class="col-md-3 d-md-flex align-items-md-stretch">
                                     <div class="count-box">
                                         <span data-toggle="counter-up">Creative</span>
                                         <p>I love being creative, hence the result, all my of designs are unique and creative.</p>
@@ -111,8 +117,8 @@ function Welcome() {
                                         <p>I love designing interfaces and logos.</p>
                                     </div>
                                 </div>*/}
-                            </div>
-                        </div>
+                        {/* </div>
+                        </div> */}
 
                     </div>
                 </section>
@@ -123,48 +129,26 @@ function Welcome() {
                     <div class="container">
                         <div class="section-title">
                             <h2>Skills</h2>
-                            <p>Picked the most important skills according to the industry requirement standards, and started practising them, then aimed at improving, here are those technologies that I have experience with.</p>
+                            <p>Aimed at expertising the technologies including, Frontend, middlware, all the way to the backend and databases, also industries most required and design technologies in addition.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                                <div class="icon-box">
-                                    <h4 class="title"><a href="">Languages</a></h4>
-                                    <p class="description">Followed my passion towards frontend.</p>
-                                    <p class="description">HTML5</p>
-                                    <p class="description">CSS3</p>
-                                    <p class="description">Bootstrap</p>
-                                    <p class="description">Javascript</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                                <div class="icon-box">
-                                    <h4 class="title"><a href="">Frameworks</a></h4>
-                                    <p class="description">Expertised in the industry relevant frameworks.</p>
-                                    <p class="description">React</p>
-                                    <p class="description">Node</p>
-                                    <p class="description">Express</p>
 
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                                <div class="icon-box">
-                                    <h4 class="title"><a href="">Databases</a></h4>
-                                    <p class="description">Gained the knowlwdge of technologies</p>
-                                    <p class="description">MongoDB</p>
-                                    <p class="description">SQL</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                                <div class="icon-box">
-                                    <h4 class="title"><a href="">Tools</a></h4>
-                                    <p class="description">Practised the industry's most required tools.</p>
-                                    <p class="description">Git & Github</p>
-                                    <p class="description">VSCode</p>
-                                    <p class="description">Adobe XD, Illustrator</p>
-                                    <p class="description">Figma</p>
+                        <div className="myskills center2">
+                            <img src="https://cdn.worldvectorlogo.com/logos/javascript.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/react-1.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/html5.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/css3.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" className="technologies"></img>
+                            {/* <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" className="technologies"></img> */}
+                            <img src="https://cdn.worldvectorlogo.com/logos/nodejs-2.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" className="technologies"></img>
+                            {/* <img src="https://cdn.worldvectorlogo.com/logos/netlify.svg" className="technologies"></img> */}
+                            {/* <img src="https://cdn.worldvectorlogo.com/logos/heroku-4.svg" className="technologies"></img> */}
+                            <img src="https://cdn.worldvectorlogo.com/logos/figma-1.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd-1.svg" className="technologies"></img>
+                            <img src="https://cdn.worldvectorlogo.com/logos/adobe-illustrator-cc.svg" className="technologies"></img>
 
-                                </div>
-                            </div>
 
 
                         </div>
@@ -174,21 +158,11 @@ function Welcome() {
                 {/* <!-- End Skills Section --> */}
 
                 {/* <!-- ======= Resume Section ======= --> */}
-                <section id="resume" class="resume section-bg">
-                    <div class="container">
-
-                        <div class="section-title">
-                            <h2>Resume</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                        </div>
-
-                        <div class="row">
-                            <div className="center"><button className="btn resumebtn bg-transparent m-3">View Resume<i className="fas fa-arrow-right blueicon fa-lg"></i></button></div>
-                        </div>
+               ?
 
                         {/* <div><img className="resume" src={process.env.PUBLIC_URL + "./Resume.png"} /></div> */}
 
-                        {/* <div class="row">
+                {/* <div class="row">
                             <div class="col-lg-6">
                                 <h3 class="resume-title">Summary</h3>
                                 <div class="resume-item pb-0">
@@ -252,114 +226,137 @@ function Welcome() {
 
                         </div> */}
 
-                    </div>
+                {/* </div>
 
-                </section>
+                </section> */}
                 {/* <!-- End Resume Section --> */}
 
 
 
                 {/* <!-- ======= Portfolio Section ======= --> */}
-                <section id="portfolio" class="portfolio section-bg">
+                <section id="projects" class="portfolio section-bg">
                     <div class="container">
-
                         <div class="section-title">
-                            <h2>Portfolio</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                        </div>
-
-                        <div class="row">
-                            <div className="center"><button className="btn resumebtn bg-transparent m-3">Go to Portfolio<i className="fas fa-arrow-right blueicon fa-lg"></i></button></div>
-                        </div>
-
+                            <h2>Projects</h2>
+                            <p>Here is the list of some of my recent projects that I developed using all the technologies I have grapsed so far.</p>                        </div>
                         <div class="row portfolio-container">
+                            {/* <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <div class="portfolio-wrap">
+                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./pizza.jpg"} />
+                                    <div class="portfolio-info">
+                                        <h4>Design - Glassmorphism</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-6 portfolio-item filter-app">
+                                <h3 className="projecttitle">Pizza Delivery</h3>
+                                <p className="projectdes">An application that provides personal user dashboard, products that are customisable for the best experience of the user ever, with securing the user and product information using login and registration.</p>
+                                <p> React, Node, Express, Mongo</p>
+                                <div className="row">
+                                    <div className="col col-lg-3"><button className="btn btn-primary text-dark bg-transparent"><i class="fab fa-github fa-lg projecticon"></i>Code</button></div>
+                                    <div className="col col-lg-3"><button className="btn btn-primary text-dark bg-transparent"><i class="fab fa-chrome fa-lg projecticon"></i>Project</button></div>
+                                </div>
+                            </div>
 
                             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                                 <div class="portfolio-wrap">
-                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./spotifyyy.jpg"} />
+                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./ecommerce.jpg"} />
                                     <div class="portfolio-info">
-                                        <h4>SPOTIFY CLONE</h4>
-                                        <p>Extracted my playlist from the Spotify app using Api following the guidelines provided and designed the Interface.</p>
-                                    </div>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                                        {/* <a href="portfolio-details.html" title="More Details"><i class="fas fa-lightbulb"></i></a> */}
-                                        <a href="google.com"></a>
+                                        <h4>Design - Monochrome</h4>
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-lg-8 col-md-6 portfolio-item filter-app">
+                                <h3 className="projecttitle">E-Commerce Site</h3>
+                                <p className="projectdes">Developed and designed an e-commerce website, wherein users can register/login then view and buy varied styles of art categorised under different art styles, all the way from sketches to silhouettes.</p>
+                                <p> React, Node, Express, Mongo</p>
+                                <div className="row">
+                                    <div className="col col-lg-3"><button className="btn btn-primary text-dark bg-transparent"><i class="fab fa-github fa-lg projecticon"></i>Code</button></div>
+                                    <div className="col col-lg-3"><button className="btn btn-primary text-dark bg-transparent"><i class="fab fa-chrome fa-lg projecticon"></i>Project</button></div>
+                                </div>
+                            </div>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <div class="portfolio-wrap">
+                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./pizza.jpg"} />
+                                    <div class="portfolio-info">
+                                        <p>An app, that makes possible of buying a variety of pizzas from admin defined to all way to user's customized choice, yes!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-6 portfolio-item filter-app">
+                                <h3 className="projecttitle">Pizza Delivery</h3>
+                                <div className="projectdes">An application that provides personal user dashboard, products that are customisable for the best experience of the user ever, with securing the user and product information using login and registration.</div>
+                                <p>Design Form - Glassmorphism <br />  React, Node, Express, Mongo</p>
+                                <div className="row">
+                                    <div className="col col-lg-3"><button className="btn btn-primary text-dark bg-transparent"><i class="fab fa-github fa-lg projecticon"></i>Code</button></div>
+                                    <div className="col col-lg-3"><button className="btn btn-primary text-dark bg-transparent"><i class="fab fa-chrome fa-lg projecticon"></i>Project</button></div>
+                                </div>
+                            </div> */}
+
+
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                                <div class="portfolio-wrap">
+                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./pizza.jpg"} />
+                                    <div class="portfolio-info">
+                                        <h4>PIZZA DELIVERY</h4>
+                                        <p className="projectdes">Fully responsive web application with a personal user dashboard, products that are customisable for the best experience ever!</p>
+                                        <p>React, Node, Express, Mongo</p>
+                                        <a href="https://github.com/MallikaPulagurtha/pizzadelivery" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">View Code</button></a>
+                                        <a href="https://pizzadeliveryapplication.herokuapp.com/" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">Website</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                                 <div class="portfolio-wrap">
                                     <img className="projectdisplay" src={process.env.PUBLIC_URL + "./ecommerce.jpg"} />
                                     <div class="portfolio-info">
-                                        <h4>E-COMMERCE SITE</h4>
-                                        <p>Developed and designed an e-commerce site from scratch, that sells all of my art pieces from different categories.</p>
-                                    </div>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                        <h4>E-COMMERCE</h4>
+                                        <p className="projectdes">An e-commerce website, wherein users can login/register and can buy varied styles of art, all the way from sketches to silhouettes.</p>
+                                        <p>React, Node, Express, Mongo</p>
+                                        <a href="https://github.com/MallikaPulagurtha/ecommerce-FE" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">View Code</button></a>
+                                        <a href="https://malli-ecommerce-fe.herokuapp.com/" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">Website</button></a>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                                 <div class="portfolio-wrap">
                                     <img className="projectdisplay" src={process.env.PUBLIC_URL + "./shorturl.jpg"} />
                                     <div class="portfolio-info">
                                         <h4>URL SHORTENER</h4>
-                                        <p>An application that converts the long URL porvided by the user into a working shortened link.</p>
-                                    </div>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                                        <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                                        <p className="projectdes">An application that converts the long URL porvided by the user into a substantially shorter link that directs to the required page.</p>
+                                        <p>React, Node, Express, Mongo</p>
+                                        <a href="https://github.com/MallikaPulagurtha/url-frontend" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">View Code</button></a>
+                                        <a href="https://urlshortenerfe.herokuapp.com/" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">Website</button></a>
+
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                                 <div class="portfolio-wrap">
-                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./pizzaaa.jpg"} />
+                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./spotify.jpg"} />
                                     <div class="portfolio-info">
-                                        <h4>PIZZA DELIVERY</h4>
-                                        <p>An app, that makes possible of buying a variety of pizzas from admin defined to all way to user's customized choice!</p>
-                                    </div>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                                        {/* <a href="portfolio-details.html" title="More Details"><i class="fas fa-lightbulb"></i></a> */}
-                                        <a href="google.com"></a>
+                                        <h4>SPOTIFY CLONE</h4>
+                                        <p className="projectdes">Extracted my playlist from the Spotify app using Api following the guidelines provided and designed the Interface.</p>
+                                        <p>Javascript DOM, Spotify developer API</p>
+                                        <a href="https://github.com/MallikaPulagurtha/spotifyclone" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">View Code</button></a>
+                                        <a href="https://adoring-hypatia-bf1482.netlify.app/" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">Website</button></a>
+
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                            {/* <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                                 <div class="portfolio-wrap">
                                     <img className="projectdisplay" src={process.env.PUBLIC_URL + "./chat.jpg"} />
                                     <div class="portfolio-info">
-                                        <h4>CHAT APPLICATION</h4>
-                                        <p>A Chatting app, that allows you to send messages to the persons available in the chat.</p>
-                                    </div>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                                        {/* <a href="portfolio-details.html" title="More Details"><i class="fas fa-lightbulb"></i></a> */}
-                                        <a href="google.com"></a>
+                                        <h4>CHAT APPLICATION</h4> */}
+                            {/* <p>A frontend application, that enables instant messaging from the user to the persons available in the chat.</p> */}
+                            {/* <p> React JS</p>
+                                        <a href="" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">View Code</button></a>
+                                        <a href="https://distracted-panini-358152.netlify.app/" target="_blank"><button className="btn btn-light text-white bg-transparent small m-2">Website</button></a>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                                <div class="portfolio-wrap">
-                                    <img className="projectdisplay" src={process.env.PUBLIC_URL + "./cart.jpg"} />
-                                    <div class="portfolio-info">
-                                        <h4>SHOPPING CART</h4>
-                                        <p>A frontend application, that allows you to add different products into the cart along with billing information.</p>
-                                    </div>
-                                    <div class="portfolio-links">
-                                        <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                                        {/* <a href="portfolio-details.html" title="More Details"><i class="fas fa-lightbulb"></i></a> */}
-                                        <a href="google.com"></a>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> */}
 
                             {/* <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                                 <div class="portfolio-wrap">
@@ -420,7 +417,7 @@ function Welcome() {
                         </div>
 
                     </div>
-                </section>
+                </section >
                 {/* <!-- End Portfolio Section --> */}
 
                 {/* <!-- ======= Testimonials Section ======= --> */}
@@ -501,37 +498,37 @@ function Welcome() {
 
                         <div class="section-title">
                             <h2>Contact</h2>
-                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                            <p className="center">Interested in working together? I'd love to hear from you. </p>
                         </div>
 
-                        <div class="row">
+                        {/* <div class="row"> */}
 
-                            <div class="col-lg-8 col-md-8">
-                                <div class="contact-about">
-                                    <div class="social-links">
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                        <a href="#"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-github"></i></a>
+                        {/* <div class="col-lg-8 col-md-8"> */}
+                        <div class="contact-about center">
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook social"></i></a>
+                                <a href="#"><i class="fab fa-instagram social"></i></a>
+                                <a href="#"><i class="fab fa-linkedin social"></i></a>
+                                <a href="#"><i class="fab fa-github social"></i></a>
 
-                                    </div>
-                                </div>
                             </div>
+                        </div>
+                    </div>
 
-                            <div class="col-lg-4 col-md-4">
+                    {/* <div class="col-lg-4 col-md-4">
                                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
 
                                     <h6>Email - sai.mallika14@gmail.com</h6>
                                 </form>
-                            </div>
+                            </div> */}
 
-                        </div>
+                    {/* </div> */}
 
-                    </div>
+                    {/* </div> */}
                 </section>
                 {/* <!-- End Contact Section --> */}
 
-            </main>
+            </main >
 
             {/* <!-- End #main --> */}
 
