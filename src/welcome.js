@@ -39,7 +39,7 @@ function Welcome() {
                 <section id="about" class="about">
                     <div class="container">
                         <div class="row">
-                            <div className="col col-lg-4 center"><img className="mypicture center center2" src={process.env.PUBLIC_URL + "./Illustration.jpg"} /></div>
+                            <div className="col col-lg-4 center"><img className="mypicture center center2" src={process.env.PUBLIC_URL + "./mallika_photo.jpg"} /></div>
                             <div className="col col-lg-8">
                                 <div class="d-flex align-items-stretch">
                                     <div class="content d-flex flex-column justify-content-center">
@@ -506,11 +506,10 @@ function Welcome() {
                         {/* <div class="col-lg-8 col-md-8"> */}
                         <div class="contact-about center">
                             <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook social"></i></a>
-                                <a href="#"><i class="fab fa-instagram social"></i></a>
-                                <a href="#"><i class="fab fa-linkedin social"></i></a>
-                                <a href="#"><i class="fab fa-github social"></i></a>
-
+                                <a href="https://www.facebook.com/mallika.pulagurtha" target="_blank"><i class="fab fa-facebook social"></i></a>
+                                <a href="https://www.instagram.com/malli._.arts/" target="_blank"><i class="fab fa-instagram social"></i></a>
+                                <a href="https://www.linkedin.com/in/mallika-pulagurtha-75bb4a1b1/" target="_blank"><i class="fab fa-linkedin social"></i></a>
+                                <a href="https://github.com/MallikaPulagurtha" target="_blank"><i class="fab fa-github social"></i></a>
                             </div>
                         </div>
                     </div>
